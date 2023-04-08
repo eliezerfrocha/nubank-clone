@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -78,6 +85,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- Saldo Conta -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -111,6 +119,7 @@
                 android:src="@drawable/ic_credit_card"
                 android:layout_margin="20dp"/>
 
+            <!-- Meus Cartões -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -125,9 +134,77 @@
 
     </androidx.cardview.widget.CardView>
 
+    <!-- Recycler Produtos -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerProdutos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <!-- Separador -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/light_gray"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Cartão Crédito -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_cartao_credito"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+
+    <!-- Fatura Atual -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_fatura_atual"
+        android:textSize="16sp"
+        android:textColor="@color/dark_gray"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Saldo Fatura -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_saldo_fatura"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Limite Disponível -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_limite_disponivel"
+        android:textSize="16sp"
+        android:textColor="@color/dark_gray"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Parcelar Compras -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_parcelar_compras"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+
+    <!-- Separador -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/light_gray"
+        android:layout_marginTop="10dp"/>
+
 </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
